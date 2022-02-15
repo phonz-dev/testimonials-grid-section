@@ -1,0 +1,27 @@
+@use "./config" as *;
+@use "./utilities" as *;
+
+.author {
+	display: flex;
+	align-items: center;
+	gap: 1rem;
+
+	&__pic {
+		width: 30px;
+		height: 30px;
+		border-radius: 50%;
+
+		&--border {
+			@include add-img-border(lighten($mod-violet, 15%));
+		}
+	}
+
+	&__info-name {
+		font-size: 0.8rem;
+	}
+
+	&__info-verified {
+		font-size: 0.7rem;
+		opacity: 0.5;
+	}
+}
