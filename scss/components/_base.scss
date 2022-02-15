@@ -1,0 +1,10 @@
+@use "./config" as *;
+
+* + * {
+	margin-top: 1.5em;
+}
+
+body {
+	font-family: $font-stack;
+	font-size: 13px;
+}
